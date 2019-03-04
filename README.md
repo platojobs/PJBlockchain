@@ -38,6 +38,31 @@ iOS 中实现区块链
 
 ```
 
+```objc
 
-![样例结果]（https://github.com/PlatoJobs/PJBlockchain/blob/master/打印结果.png）
+//区块链（Blockchain）类需要用一个区块的实例来初始化自己。这个区块也被称为创世区块（genesis block），正因为它是区块链的第一个区块
+
+- (void)pj_instantiationWithBlock:(PJBlock *)block{
+    
+    if (_pj_blocks == nil) {
+        // 添加创世区块
+        // 第一个区块没有 previous hash
+        block.previousHash = @"0";
+        block.blockHash = [self pj_generateHashForblock:block];
+    }else{
+        PJBlock *previousBlock = [self pj_getPreviousBlock];
+        block.previousHash = previousBlock.blockHash;
+        block.index = @(self.blocks.count).intValue;
+        block.blockHash = [self pj_generateHashForblock:block];
+    }
+    [self.blocks addObject:block];
+    [self pj_displayBlock:block];
+    
+    
+}
+
+```
+
+
+![样例结果](https://github.com/PlatoJobs/PJBlockchain/blob/master/打印结果.png）
 
