@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2E639B222D2735006DC123 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E639A222D2735006DC123 /* AppDelegate.m */; };
+		AB2E639E222D2735006DC123 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E639D222D2735006DC123 /* ViewController.m */; };
+		AB2E63A1222D2735006DC123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E639F222D2735006DC123 /* Main.storyboard */; };
+		AB2E63A3222D2737006DC123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2E63A2222D2737006DC123 /* Assets.xcassets */; };
+		AB2E63A6222D2737006DC123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E63A4222D2737006DC123 /* LaunchScreen.storyboard */; };
+		AB2E63A9222D2737006DC123 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63A8222D2737006DC123 /* main.m */; };
+		AB2E63B3222D2737006DC123 /* PJBlockchainDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63B2222D2737006DC123 /* PJBlockchainDemoTests.m */; };
+		AB2E63BE222D2737006DC123 /* PJBlockchainDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63BD222D2737006DC123 /* PJBlockchainDemoUITests.m */; };
+		AB2E63CE222D27D9006DC123 /* PJBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63CD222D27D9006DC123 /* PJBlock.m */; };
+		AB2E63D1222D287E006DC123 /* PJBlockChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63D0222D287E006DC123 /* PJBlockChain.m */; };
+		AB2E63D7222D2C49006DC123 /* PJSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63D6222D2C49006DC123 /* PJSecurity.m */; };
+		AB2E63DA222D2CFF006DC123 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E63D9222D2CFF006DC123 /* Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB2E63AF222D2737006DC123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2E638E222D2735006DC123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2E6395222D2735006DC123;
+			remoteInfo = PJBlockchainDemo;
+		};
+		AB2E63BA222D2737006DC123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2E638E222D2735006DC123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2E6395222D2735006DC123;
+			remoteInfo = PJBlockchainDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB2E6396222D2735006DC123 /* PJBlockchainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJBlockchainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2E6399222D2735006DC123 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB2E639A222D2735006DC123 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB2E639C222D2735006DC123 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB2E639D222D2735006DC123 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB2E63A0222D2735006DC123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB2E63A2222D2737006DC123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB2E63A5222D2737006DC123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB2E63A7222D2737006DC123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2E63A8222D2737006DC123 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB2E63AE222D2737006DC123 /* PJBlockchainDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJBlockchainDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2E63B2222D2737006DC123 /* PJBlockchainDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJBlockchainDemoTests.m; sourceTree = "<group>"; };
+		AB2E63B4222D2737006DC123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2E63B9222D2737006DC123 /* PJBlockchainDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJBlockchainDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2E63BD222D2737006DC123 /* PJBlockchainDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJBlockchainDemoUITests.m; sourceTree = "<group>"; };
+		AB2E63BF222D2737006DC123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2E63CC222D27D9006DC123 /* PJBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJBlock.h; sourceTree = "<group>"; };
+		AB2E63CD222D27D9006DC123 /* PJBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJBlock.m; sourceTree = "<group>"; };
+		AB2E63CF222D287E006DC123 /* PJBlockChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJBlockChain.h; sourceTree = "<group>"; };
+		AB2E63D0222D287E006DC123 /* PJBlockChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJBlockChain.m; sourceTree = "<group>"; };
+		AB2E63D5222D2C49006DC123 /* PJSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJSecurity.h; sourceTree = "<group>"; };
+		AB2E63D6222D2C49006DC123 /* PJSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJSecurity.m; sourceTree = "<group>"; };
+		AB2E63D8222D2CFF006DC123 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		AB2E63D9222D2CFF006DC123 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2E6393222D2735006DC123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63AB222D2737006DC123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63B6222D2737006DC123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2E638D222D2735006DC123 = {
+			isa = PBXGroup;
+			children = (
+				AB2E6398222D2735006DC123 /* PJBlockchainDemo */,
+				AB2E63B1222D2737006DC123 /* PJBlockchainDemoTests */,
+				AB2E63BC222D2737006DC123 /* PJBlockchainDemoUITests */,
+				AB2E6397222D2735006DC123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2E6397222D2735006DC123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E6396222D2735006DC123 /* PJBlockchainDemo.app */,
+				AB2E63AE222D2737006DC123 /* PJBlockchainDemoTests.xctest */,
+				AB2E63B9222D2737006DC123 /* PJBlockchainDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2E6398222D2735006DC123 /* PJBlockchainDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E63CB222D27B6006DC123 /* BlockClass */,
+				AB2E6399222D2735006DC123 /* AppDelegate.h */,
+				AB2E639A222D2735006DC123 /* AppDelegate.m */,
+				AB2E639C222D2735006DC123 /* ViewController.h */,
+				AB2E639D222D2735006DC123 /* ViewController.m */,
+				AB2E639F222D2735006DC123 /* Main.storyboard */,
+				AB2E63A2222D2737006DC123 /* Assets.xcassets */,
+				AB2E63A4222D2737006DC123 /* LaunchScreen.storyboard */,
+				AB2E63A7222D2737006DC123 /* Info.plist */,
+				AB2E63A8222D2737006DC123 /* main.m */,
+			);
+			path = PJBlockchainDemo;
+			sourceTree = "<group>";
+		};
+		AB2E63B1222D2737006DC123 /* PJBlockchainDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E63B2222D2737006DC123 /* PJBlockchainDemoTests.m */,
+				AB2E63B4222D2737006DC123 /* Info.plist */,
+			);
+			path = PJBlockchainDemoTests;
+			sourceTree = "<group>";
+		};
+		AB2E63BC222D2737006DC123 /* PJBlockchainDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E63BD222D2737006DC123 /* PJBlockchainDemoUITests.m */,
+				AB2E63BF222D2737006DC123 /* Info.plist */,
+			);
+			path = PJBlockchainDemoUITests;
+			sourceTree = "<group>";
+		};
+		AB2E63CB222D27B6006DC123 /* BlockClass */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E63D8222D2CFF006DC123 /* Base64.h */,
+				AB2E63D9222D2CFF006DC123 /* Base64.m */,
+				AB2E63CC222D27D9006DC123 /* PJBlock.h */,
+				AB2E63CD222D27D9006DC123 /* PJBlock.m */,
+				AB2E63CF222D287E006DC123 /* PJBlockChain.h */,
+				AB2E63D0222D287E006DC123 /* PJBlockChain.m */,
+				AB2E63D5222D2C49006DC123 /* PJSecurity.h */,
+				AB2E63D6222D2C49006DC123 /* PJSecurity.m */,
+			);
+			path = BlockClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2E6395222D2735006DC123 /* PJBlockchainDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2E63C2222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemo" */;
+			buildPhases = (
+				AB2E6392222D2735006DC123 /* Sources */,
+				AB2E6393222D2735006DC123 /* Frameworks */,
+				AB2E6394222D2735006DC123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PJBlockchainDemo;
+			productName = PJBlockchainDemo;
+			productReference = AB2E6396222D2735006DC123 /* PJBlockchainDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB2E63AD222D2737006DC123 /* PJBlockchainDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2E63C5222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemoTests" */;
+			buildPhases = (
+				AB2E63AA222D2737006DC123 /* Sources */,
+				AB2E63AB222D2737006DC123 /* Frameworks */,
+				AB2E63AC222D2737006DC123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2E63B0222D2737006DC123 /* PBXTargetDependency */,
+			);
+			name = PJBlockchainDemoTests;
+			productName = PJBlockchainDemoTests;
+			productReference = AB2E63AE222D2737006DC123 /* PJBlockchainDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB2E63B8222D2737006DC123 /* PJBlockchainDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2E63C8222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemoUITests" */;
+			buildPhases = (
+				AB2E63B5222D2737006DC123 /* Sources */,
+				AB2E63B6222D2737006DC123 /* Frameworks */,
+				AB2E63B7222D2737006DC123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2E63BB222D2737006DC123 /* PBXTargetDependency */,
+			);
+			name = PJBlockchainDemoUITests;
+			productName = PJBlockchainDemoUITests;
+			productReference = AB2E63B9222D2737006DC123 /* PJBlockchainDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2E638E222D2735006DC123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = David;
+				TargetAttributes = {
+					AB2E6395222D2735006DC123 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AB2E63AD222D2737006DC123 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AB2E6395222D2735006DC123;
+					};
+					AB2E63B8222D2737006DC123 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AB2E6395222D2735006DC123;
+					};
+				};
+			};
+			buildConfigurationList = AB2E6391222D2735006DC123 /* Build configuration list for PBXProject "PJBlockchainDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB2E638D222D2735006DC123;
+			productRefGroup = AB2E6397222D2735006DC123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2E6395222D2735006DC123 /* PJBlockchainDemo */,
+				AB2E63AD222D2737006DC123 /* PJBlockchainDemoTests */,
+				AB2E63B8222D2737006DC123 /* PJBlockchainDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2E6394222D2735006DC123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2E63A6222D2737006DC123 /* LaunchScreen.storyboard in Resources */,
+				AB2E63A3222D2737006DC123 /* Assets.xcassets in Resources */,
+				AB2E63A1222D2735006DC123 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63AC222D2737006DC123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63B7222D2737006DC123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2E6392222D2735006DC123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2E63DA222D2CFF006DC123 /* Base64.m in Sources */,
+				AB2E639E222D2735006DC123 /* ViewController.m in Sources */,
+				AB2E63D7222D2C49006DC123 /* PJSecurity.m in Sources */,
+				AB2E63D1222D287E006DC123 /* PJBlockChain.m in Sources */,
+				AB2E63CE222D27D9006DC123 /* PJBlock.m in Sources */,
+				AB2E63A9222D2737006DC123 /* main.m in Sources */,
+				AB2E639B222D2735006DC123 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63AA222D2737006DC123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2E63B3222D2737006DC123 /* PJBlockchainDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E63B5222D2737006DC123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2E63BE222D2737006DC123 /* PJBlockchainDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB2E63B0222D2737006DC123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2E6395222D2735006DC123 /* PJBlockchainDemo */;
+			targetProxy = AB2E63AF222D2737006DC123 /* PBXContainerItemProxy */;
+		};
+		AB2E63BB222D2737006DC123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2E6395222D2735006DC123 /* PJBlockchainDemo */;
+			targetProxy = AB2E63BA222D2737006DC123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB2E639F222D2735006DC123 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2E63A0222D2735006DC123 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB2E63A4222D2737006DC123 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2E63A5222D2737006DC123 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB2E63C0222D2737006DC123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB2E63C1222D2737006DC123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB2E63C3222D2737006DC123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB2E63C4222D2737006DC123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB2E63C6222D2737006DC123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PJBlockchainDemo.app/PJBlockchainDemo";
+			};
+			name = Debug;
+		};
+		AB2E63C7222D2737006DC123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PJBlockchainDemo.app/PJBlockchainDemo";
+			};
+			name = Release;
+		};
+		AB2E63C9222D2737006DC123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PJBlockchainDemo;
+			};
+			name = Debug;
+		};
+		AB2E63CA222D2737006DC123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR566AMPNB;
+				INFOPLIST_FILE = PJBlockchainDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PlatoJobs.PJBlockchainDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PJBlockchainDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2E6391222D2735006DC123 /* Build configuration list for PBXProject "PJBlockchainDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2E63C0222D2737006DC123 /* Debug */,
+				AB2E63C1222D2737006DC123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2E63C2222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2E63C3222D2737006DC123 /* Debug */,
+				AB2E63C4222D2737006DC123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2E63C5222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2E63C6222D2737006DC123 /* Debug */,
+				AB2E63C7222D2737006DC123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2E63C8222D2737006DC123 /* Build configuration list for PBXNativeTarget "PJBlockchainDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2E63C9222D2737006DC123 /* Debug */,
+				AB2E63CA222D2737006DC123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2E638E222D2735006DC123 /* Project object */;
+}
