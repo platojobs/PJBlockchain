@@ -63,6 +63,5 @@ iOS 中实现区块链
 
 ```
 
-
-![样例结果](https://github.com/PlatoJobs/PJBlockchain/blob/master/打印结果.png）
+![样例结果](https://github.com/PlatoJobs/PJBlockchain/blob/master/打印结果.png)
 
